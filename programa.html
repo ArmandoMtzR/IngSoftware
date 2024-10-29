@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
+ 
+     <!-- Título de tu proyecto -->
+     <title>Semigrupos, Monoides y Grupos</title>
+      <!--Descripción del tutorial-->
+     <meta name="Description" content="Características y representaciones matriciales">
+     <meta name="Keywords" content="Características y representaciones matriciales"><!--Palabras clave-->
+     <meta name="robots" content="noindex, nofollow">
+      
+     <script src="media/js/jq.js" type="text/javascript"></script>
+     <script src="media/js/m.js" type="text/javascript"></script>
+     <script src="media/js/ui.js" type="text/javascript"></script>
+     
+     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
+     <link rel="stylesheet" href="media/css/tablaCentrada.css">
+ 
+     
+     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
+     <link rel="stylesheet" href="media/css/instruccionesdelprograma.css" type="text/css">
+     <title>Algoritmo de Grupos, Semigrupos</title>
+     <script type="text/javascript">
+         // Función que verifica si un conjunto es cerrado bajo una operación
+         function esCerrado(conjunto, operacion) {
+             for (var i = 0; i < conjunto.length; i++) {
+                 for (var j = 0; j < conjunto.length; j++) {
+                     var resultado = operacion(conjunto[i], conjunto[j]);
+                     if (conjunto.indexOf(resultado) == -1) {
+                         return false;
+                     }
+                 }
+             }
+             return true;
+         }
+ 
+         // Función que verifica si una operación es asociativa
+         function esAsociativa(conjunto, operacion) {
+             for (var i = 0; i < conjunto.length; i++) {
+                 for (var j = 0; j < conjunto.length; j++) {
+                     for (var k = 0; k < conjunto.length; k++) {
+                         var resultado1 = operacion(operacion(conjunto[i], conjunto[j]), conjunto[k]);
+                         var resultado2 = operacion(conjunto[i], operacion(conjunto[j], conjunto[k]));
+                         if (resultado1 != resultado2) {
+                             return false;
+                         }
+                     }
+                 }
+             }
+             return true;
+         }
+ 
+         // Función que verifica si un conjunto con una operación forma un semigrupo
+         function esSemigrupo(conjunto, operacion) {
+             return esCerrado(conjunto, operacion) && esAsociativa(conjunto, operacion);
+             }
+ 
+         // Función que verifica si un conjunto con una operación forma un grupo
+         function esGrupo(conjunto, operacion) {
+             if (!esCerrado(conjunto, operacion) || !esAsociativa(conjunto, operacion)) {
+                 return false;
+             }
+             for (var i = 0; i < conjunto.length; i++) {
+                 var elementoInverso = null;
+                 for (var j = 0; j < conjunto.length; j++) {
+                     if (operacion(conjunto[i], conjunto[j]) == 0 && operacion(conjunto[j], conjunto[i]) == 0) {
+                         elementoInverso = conjunto[j];
+                         break;
+                     }
+                 }
+                 if (elementoInverso == null) {
+                     return false;
+                 }
+             }
+             return true;
+         }
+ 
+         // Función que se ejecuta al enviar el formulario
+         function validarFormulario() {
+             // Obtener los valores del formulario
+             var conjuntoStr = document.getElementById("conjunto").value;
+             var operacionStr = document.getElementById("operacion").value;
+             // Convertir el conjunto a un arreglo de números
+             var conjunto = conjuntoStr.split(",").map(function(x) {
+                 return parseInt(x.trim());
+             });
+             // Convertir la operación a una función
+             var operacion = new Function("a", "b", "return " + operacionStr + ";");
+             // Verificar si el conjunto forma un semigrupo
+             if (esSemigrupo(conjunto, operacion)) {
+                 document.getElementById("resultadoSemigrupo").innerHTML = "El conjunto forma un semigrupo.";
+             } else {
+                 document.getElementById("resultadoSemigrupo").innerHTML = "El conjunto no forma un semigrupo.";
+       }
+       // Verificar si el conjunto forma un grupo
+ if (esGrupo(conjunto, operacion)) {
+ document.getElementById("resultadoGrupo").innerHTML = "El conjunto forma un grupo.";
+ } else {
+ document.getElementById("resultadoGrupo").innerHTML = "El conjunto no forma un grupo.";
+ }
+ // Evitar que se recargue la página
+ return false;
+ }
+     </script>
+     </head>
+ <body style>
+   <h1><b>Generador de grupos y semigrupos</b></h1>
+     <form onsubmit="return validarFormulario();">
+         <p class="tag" align="center"><label for="conjunto">Conjunto:</label></p>
+         <p class="tag" align="center"><input type="text" id="conjunto" name="conjunto"><br><br></p>
+         <p class="tag" align="center"><label for="operacion">Operación:</label></p>
+         <p class="tag" align="center"><input type="text" id="operacion" name="operacion"><br><br></p>
+         <p class="tag" align="center"><input type="submit" value="Verificar"><br><br></p>
+         <p class="tag" align="center"><label for="resultadoSemigrupo">Resultado:</label></p>
+         <p class="tag" align="center"><span id="resultadoSemigrupo"></span><br><br></p><p class="tag" align="center"></p>
+         <p class="tag" align="center"><label for="resultadoGrupo">Resultado:</label></p>
+       <p class="tag" align="center"><span id="resultadoGrupo"></span></p>
+     <section>
+         <section id="reintentar">
+            <ul id="listaPortada">
+               <a href="instruccionesdelprograma.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
+            </ul>
+ 
+ 
+ </section></section></form></body></html>
