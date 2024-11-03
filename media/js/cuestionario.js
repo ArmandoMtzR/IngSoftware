@@ -114,18 +114,74 @@ preguntas[9] = new pregunta(
   3
 );
 preguntas[10] = new pregunta(
-  "¿Cuál es la definición de subgrupo?",
-  "Un subconjunto que es un grupo en sí mismo",
-  "Un subconjunto que es un semigrupo en sí mismo",
-  "Un subconjunto que es un monoide en sí mismo",
-  "Un subconjunto que es un homomorfismo en sí mismo",
+  "¿Cuál es el objetivo principal del proyecto SWEBOK?",
+  "Proporcionar herramientas de software gratuitas",
+  "Crear nuevos lenguajes de programación",
+  "Producir software para el sector público",
+  "Definir los límites y proporcionar acceso al conocimiento de la ingeniería de software",
   3
 );
 preguntas[11] = new pregunta(
-  "¿Qué es un grupo abeliano?",
-  "Un grupo conmutativo",
-  "Un grupo no conmutativo",
-  "Un grupo con elementos inversos",
-  "Un grupo sin elementos inversos",
+  "¿Qué organizaciones promueven el proyecto SWEBOK?",
+  "Google y Microsoft",
+  "NASA y SpaceX",
+  "Universidad de Stanford y MIT",
+  "IEEE Computer Society y ACM",
   3
+);
+preguntas[12] = new pregunta(
+  "¿Cuántas áreas de conocimiento define SWEBOK para la ingeniería de software?",
+  "15",
+  "5",
+  "7",
+  "11",
+  0
+);
+preguntas[13] = new pregunta(
+  "¿Cuál de las siguientes áreas NO es parte de las definidas en SWEBOK?",
+  "Análisis de hardware",
+  "Requisitos de software",
+  "Construcción de software",
+  "Pruebas de software",
+  0
+);
+preguntas[14] = new pregunta(
+  "¿En qué fase del proyecto se encuentra SWEBOK?",
+  "Fase de prueba",
+  "Fase inicial",
+  "Fase final",
+  "Fase de implementación",
+  0
+);
+preguntas[15] = new pregunta(
+  "¿Cómo se llama la tercera fase del proyecto SWEBOK?",
+  "Fase Steel Man",
+  "Fase Iron Man",
+  "Fase Software Man",
+  "Fase Power Man",
+  1
+);
+preguntas[16] = new pregunta(
+  "¿Qué contiene la versión de prueba 1.00 de SWEBOK?",
+  "Solo referencias de investigación",
+  "Artículos científicos organizados en torno a áreas temáticas de ingeniería de software",
+  "Un manual de programación",
+  "Herramientas de gestión de proyectos",
+  1
+);
+preguntas[17] = new pregunta(
+  "¿Cuál es el objetivo de los documentos en SWEBOK?",
+  "Definir un modelo de negocio para el software",
+  "Definir terminología, conceptos y enfoques para áreas de conocimiento en ingeniería de software",
+  "Crear un nuevo lenguaje de programación",
+  "Establecer estándares de hardware",
+  1
+);
+preguntas[18] = new pregunta(
+  "¿Qué sucederá con SWEBOK cuando finalice el proyecto?",
+  "Se lanzará como un producto comercial",
+  "Será parte del estándar ISO 9000-3",
+  "Se convertirá en un estándar de la IEEE",
+  "Se lanzará como un producto comercial",
+  2
 );
