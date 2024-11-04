@@ -362,7 +362,7 @@ preguntas[40] = new pregunta(
   1
 );
 preguntas[41] = new pregunta(
-  "¿Por qué es posible que SWEBOK necesite ser actualizado en el futuro?",
+  "¿Por qué es posible que SWEBOK necesita ser actualizado en el futuro?",
   "Porque la guía se quedó obsoleta en el momento de su publicación",
   "Debido a la evolución continua de la ingeniería de software y la aparición de nuevas técnicas",
   "Para cumplir con los estándares de hardware modernos",
