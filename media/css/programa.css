@@ -11,7 +11,7 @@ body {
 .titulo{
     font-family: "Lilita One", sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color:rgb(208, 72, 72);
     width: 300px;
     height: 50px;
@@ -29,6 +29,7 @@ body {
     text-align: justify;
     color: black;
     font-family: "Lilita One", sans-serif;
+    font-size: 20px;
 }
 
 .botonContenedor{
@@ -50,4 +51,11 @@ body {
     border-color: red;
     cursor: pointer;
     font-family: "Lilita One", sans-serif;
+}
+
+section.ventanaEncuesta #preguntaActual{
+    text-align: justify;
+    color: black;
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
 }

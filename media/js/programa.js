@@ -57,6 +57,7 @@ function comenzarCuestionario() {
   document.getElementById("ventanaEncuesta").style.display = "block";
   document.getElementById("InstruccionesPrograma").style.display = "none";
   document.getElementById("botonComenzar").style.display = "none";
+  document.getElementById("botonSiguiente").style.display = "block";
   cargarPregunta();
 }
 
@@ -91,7 +92,19 @@ function siguientePregunta() {
 }
 
 function mostrarResultados() {
-  document.getElementById(
-    "ventanaEncuesta"
-  ).innerHTML = `<h2>Resultado</h2><p>Tu puntuación es ${puntaje} de ${preguntas.length}.</p>`;
+	const resultadoHTML = `<h2>Resultado</h2><p>Tu puntuación es ${puntaje} de ${preguntas.length}.</p>`;
+	document.getElementById("preguntaActual").innerHTML = resultadoHTML;
+	document.getElementById("opciones").innerHTML = ''; // Limpiar opciones
+  document.getElementById("botonSiguiente").style.display = "none";
+	document.getElementById("botonReiniciar").style.display = "inline-block"; // Muestra el botón "Reiniciar"
+}
+
+
+function reiniciarCuestionario() {
+	preguntaIndice = 0;
+	puntaje = 0;
+	document.getElementById("botonReiniciar").style.display = "none"; // Oculta el botón "Reiniciar"
+	document.getElementById("ventanaEncuesta").style.display = "none";
+	document.getElementById("InstruccionesPrograma").style.display = "block";
+	document.getElementById("botonComenzar").style.display = "inline-block"; // Vuelve a mostrar el botón "Comenzar"
 }
