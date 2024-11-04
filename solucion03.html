@@ -8,7 +8,7 @@
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
     <!-- Título de tu proyecto -->
-    <title>GRUPOS, SEMIGRUPOS MONOIDES</title>
+    <title>SWEBOK</title>
     <!--Descripción del tutorial-->
     <meta name="Description" content="Semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
@@ -25,28 +25,91 @@
 
 </head>
 
-<body style>
-    <section>
-        <h1><b>Para resolver este ejercicio los pasos son los siguientes:</b></h1>
+<body style="">
+<section>
+    <h1><b>Para este ejercicio se tiene que:</b></h1>
+
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
+
+    
+    
+    <div class="button-container">
         <h1><b>Paso 1</b></h1>
-        <p class="tag" align="center">De modo que <i>T <sup>0</sup> = 1x</i></p>
-        <p class="tag" align="center"><i>T <sup>1</sup> = T <sup>0</sup> o T = 1x o T = T</i></p>
-        <h1><b>Paso 2</b></h1>
-        <p class="tag" align="center"><i>T <sup>1</sup>= T <sup>1</sup> o T = T o T</i></p>
-        <p class="tag" align="center"><i>T <sup>3</sup> = T2 o T = (T o T) o T = T o T o T</i></p>
-        <h1><b>Paso 3</b></h1>
-        <p class="tag" align="center">Por inducción se prueba que:</p>
-        <p class="tag" align="center">T <sup>n</sup> o T <sup>m</sup> = T <sup>n+m</sup></p>
-        <p class="tag" align="center">para todo n, m pertenece a N</p>
-        <p class="tag" align="justify">Pongamos <i>(T) = (T <sup>n</sup> y n pertenece N)</i></p>.
-        <p class="tag" align="center"></p>
-        <h1><b>Por lo que el par <i>((T),o)</i> es un monoide; elemental unidad es <i>1x = T <sup>0</sup></i></b></h1>
-        <p></p>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Un monoide es un semigrupo que tiene elemento neutro.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Paso 2</b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">En este caso, la operación es la multiplicación (*) y el elemento neutro es 1.
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Paso 3</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Tomemos cualquier número natural "a" en N.  
+      
+    </p></div>
+  
+   
 
-        </p>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
+    <div class="button-container">
+      <h1><b>Paso 4</b></h1>
+    <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+  </div>
 
-</body>
 
+  <div id="paso4">
+    <br>
+    <br>
+    <p class="tag" align="center">Se cumple que: a * 1 = 1 * a = a.</p>
+
+
+  <p class="tag" align="center"></p><h1><b>Por lo tanto, (N,*) es un monoide, ya que además de ser un semigrupo, tiene un elemento neutro que es (1).</b></h1><p></p>
+  
+  
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
