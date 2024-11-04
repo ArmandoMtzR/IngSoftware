@@ -8,7 +8,7 @@
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
     <!-- Título de tu proyecto -->
-    <title>semigrupos, monoides y grupos</title>
+    <title>SWEBOK</title>
     <!--Descripción del tutorial-->
     <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
@@ -24,34 +24,91 @@
     <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b> La resolución para este ejercicio es la siguiente:</b></h1>
+<body style="">
+<section>
+    <h1><b>Para este ejercicio se tiene que:</b></h1>
+
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
+
+    
+    
+    <div class="button-container">
         <h1><b>Paso 1</b></h1>
-        <p class="tag" align="justify"> <i>(a) Sea G = Z ⊕ Z2</i> , suponiendo las operaciones aditivas
-            habituales en <i>Z y Z2</i></p>
-        <p class="tag" align="justify">Se puede comprobar fácilmente que: <i>a = (0, 1)</i> es el único elemento
-            en G de orden 2; por ejemplo, todo elemento <i>(a, 1)</i> con <i>a ̸= 0</i> tiene orden
-            infinito.</p>
-        <h1><b>Paso 2</b></h1>
-        <p class="tag" align="justify"><i>(b) Sea G</i> el conjunto de todas las sucesiones de números <i>±1:</i></p>
-        <p class="tag" align="center"><i>G = {x = (xn)∞n=1 : xn = −1 o 1 </i>, para todo n ∈ N}</p>
-        <p class="tag" align="justify">Con la operación de multiplicación definida por coordenadas:
-        </p>
-        <p class="tag" align="center"><i>x · y = (xn · yn)∞n=1</i></p>
-        <h1><b>Paso 3</b></h1>
-        <p class="tag" align="justify">Es por ello que 'G' es cerrado respecto a la operación definida, ya que <i>(±1) ×
-                (±1) = (±1)</i></p>
-        <p class="tag" align="justify"> la multiplicación es asociativa y la sucesion estacionaria <i>1 = (1, 1, 1, . .
-                .)</i></p>
-        <p class="tag" align="justify">actúa como neutro y cada elemento de 'G' es su propio inverso, ya que: s</p>
-        <p class="tag" align="center"><i>x · x = ((±1)2)∞n=1 = 1</i></p>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Un monoide es un semigrupo que tiene elemento neutro.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Paso 2</b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">En este caso, la operación es la multiplicación (*) y el elemento neutro es 1.
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Paso 3</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Tomemos cualquier número natural "a" en N.  
+      
+    </p></div>
+  
+   
 
-        <br><br>
+    <div class="button-container">
+      <h1><b>Paso 4</b></h1>
+    <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+  </div>
 
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
 
-</body>
+  <div id="paso4">
+    <br>
+    <br>
+    <p class="tag" align="center">Se cumple que: a * 1 = 1 * a = a.</p>
 
+
+  <p class="tag" align="center"></p><h1><b>Por lo tanto, (N,*) es un monoide, ya que además de ser un semigrupo, tiene un elemento neutro que es (1).</b></h1><p></p>
+  
+  
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
