@@ -19,29 +19,32 @@
 <body class="main">
 	<section>
 		<h1 class="titulo">Programa</h1>
-		<div id="IntruccionesPrograma">
+		<div id="InstruccionesPrograma">
 			<p class="parrafo">El programa es un cuestionario diseñado para realizar el reforzamiento de los conocimientos
 				obtenidos con los puntos anteriores.
 			</p>
 			<p class="parrafo">
-				El porgrama esta muestra 10 preguntas de opción multimple las cuales el usuario debera de
-				contrstar conforme vayan apreciendo, para continuar con la siguiente pregunta se debe de
-				dar al boton siguiente.
+				El programa muestra 5 preguntas de opción múltiple, las cuales el usuario deberá de
+				contestar conforme vayan apareciendo, para continuar con la siguiente pregunta se debe de
+				dar al botón siguiente.
 			</p>
-			<p class="parrafo">El usuario resibira una calificación por el número de preguntas corresctas que haya tenido
+			<p class="parrafo">El usuario recibirá una calificación por el número de preguntas correctas que haya tenido.
 			</p>
 		</div>
-		<div class="botonContenedor"><button class="botonesPrograma">Comenzar</button></div>
+		<div class="botonContenedor"><button id="botonComenzar" class="botonesPrograma" onclick="comenzarCuestionario()">Comenzar</button></div>
 	</section>
 
-	<section class="ventanaEncuesta">
-	<h2 class="subtitulo">Selecciona la opción que corresponda</h2>
-
+	<section class="ventanaEncuesta" id="ventanaEncuesta" style="display:none;">
+		<h2 class="subtitulo">Selecciona la opción que corresponda</h2>
+		<div id="preguntaActual"></div>
+		<div id="opciones"></div>
+		<div class="botonContenedor"><button class="botonesPrograma" onclick="siguientePregunta()">Siguiente</button></div>
 	</section>
 
 	<script src="media/js/jq.js" type="text/javascript"></script>
 	<script src="media/js/m.js" type="text/javascript"></script>
 	<script src="media/js/ui.js" type="text/javascript"></script>
+	<script src="media/js/programa.js" type="text/javascript"></script>
 </body>
 
 </html>
