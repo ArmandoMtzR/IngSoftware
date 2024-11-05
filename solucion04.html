@@ -10,7 +10,7 @@
     <!-- Título de tu proyecto -->
     <title>SWEBOK</title>
     <!--Descripción del tutorial-->
-    <meta name="Description" content="Teoría de la computabilidad. Funciones computables. Definiciones y conceptos">
+    <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
     <meta name="robots" content="noindex, nofollow">
 
@@ -21,31 +21,91 @@
     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
 
     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
-    <link rel="stylesheet" href="media/css/solucion06.css" type="text/css">
+    <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b> Piensa tu respuesta antes de dar click en revisar</b></h1>
-        
-        <h1><b>La estandarización incluye: </b></h1>
-        
-        <p class="tag" align="justify">Definición de áreas de conocimiento.
-        </p>
+<body style="">
+<section>
+    <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
 
-        
-        <h1><b>Segundo punto</b></h1>
-        <p class="tag" align="justify">Define el contenido de la disciplina de ingeniería de software</p>
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
 
-        
-        <h1><b>Tercer punto </b></h1>
-        <p class="tag" align="justify"> Aclara los límites de la ingeniería de software en relación con otras disciplinas.</p>
+    
+    
+    <div class="button-container">
+        <h1><b>La estandarización incluye:</b></h1>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Definición de áreas de conocimiento.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Segundo punto </b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">Define el contenido de la disciplina de ingeniería de software.
+    </p></div>
+    
+        <div class="button-container">
+      <h1><b>Tercer punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Aclara los límites de la ingeniería de software en relación con otras disciplinas.
+    </p></div>
 
-        
-        <br><br>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
 
-</body>
 
+        <div class="button-container">
+      <h1><b>Cuarto punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso4">
+      <br>
+      <br>
+      <p class="tag" align="center">Apoya la certificación y licencia de ingenieros de software.
+    </p></div>
+    
+
+    
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
