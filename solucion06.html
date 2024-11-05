@@ -8,9 +8,9 @@
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
     <!-- Título de tu proyecto -->
-    <title>GRUPOS, SEMIGRUPOS Y MONOIDES</title>
+    <title>SWEBOK</title>
     <!--Descripción del tutorial-->
-    <meta name="Description" content="GRUPOS, SEMIGRUPS Y MONOIDES">
+    <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
     <meta name="robots" content="noindex, nofollow">
 
@@ -21,44 +21,91 @@
     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
 
     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
-    <link rel="stylesheet" href="media/css/solucion04.css" type="text/css">
+    <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b>Para resolver este ejercicio se aplican los siguientes pasos:</b></h1>
-        <h1><b>Paso 1</b></h1>
-        <p class="tag" align="center">Como ya se indica que el grupo es conmutativo podemos escribir:
-        </p>
-        <p class="tag" align="center"> <i>X⋅c=c⋅x;x⋅a=a⋅x</i></p>
-        <h1><b>Paso 2</b></h1>
-        <p class="tag" align="justify">Además se comprueba que el conjunto es cerrado observando la tabla y para la
-            propiedad
-            conmutativa tenemos:</p>
-        <p class="tag" align="center"><i>A⋅b⋅x2⋅c=c⋅x⋅a→a⋅b⋅x⋅c⋅x=•=c⋅a⋅x→a⋅b⋅x⋅c=c⋅a</i></p>
-        <p class="tag" align="justify">O lo que es igual:</p>
-        <p class="tag" align="center"><i>A⋅b⋅x⋅c=a⋅c→a⋅b⋅x=a→b⋅x=e→x=b−1</i></p>
-        <h1><b>Paso 3</b></h1>
-        <p class="tag" align="justify">Para demostrar la segunda parte del ejercicio, operamos a la derecha con
-            <i>(x−1ax)2</i>, con lo cual:</p>
-        <p class="tag" align="center"><i>A⋅(x−1⋅a⋅x)3=(x−1⋅a⋅x)⋅a(x−1ax)(x−1ax)</i></p>
-        <p class="tag" align="justify">Y haciendo uso de la propiedad indicada en el enunciado:</p>
-        <p class="tag" align="center"><i>A⋅e=a=x−1⋅a⋅x⋅a⋅x−1⋅a(x⋅x−1)a⋅x=•=x−1(a⋅x⋅a)x−1⋅a2⋅x</i></p>
-        <h1><b>Paso 4</b></h1>
-        <p class="tag" align="justify">Pero por la misma propiedad indicada se tiene que:</p>
-        <p class="tag" align="center"><i>X3=e→x−1=x2;a3=e→a−1=a2</i></p>
-        <p class="tag" align="justify">Y, por lo tanto:</p>
-        <p class="tag" align="center"><i>=x⋅x(a⋅x⋅a)xx⋅a⋅a⋅x=x(x⋅a)2x2a2x=</i></p>
-        <p class="tag" align="center"><i>x(x⋅a)−1x2a2x=x⋅a−1x−1x⋅x⋅a2⋅x=x⋅a−1⋅x⋅a2⋅x</i></p>
-        <p class="tag" align="center">Con lo que, podemos concluir que:</p>
-        <h1><b>
-                <center>A=x⋅a−1⋅x⋅a−1⋅x=(x⋅a−1)2x=•=(x⋅a−1)−1x=(a−1)−1x−1x=a</center>
-            </b></h1>
+<body style="">
+<section>
+    <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
 
-        <br><br>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
 
-</body>
+    
+    
+    <div class="button-container">
+        <h1><b>Primer Punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Definición de áreas de conocimiento.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Segundo punto </b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">Define el contenido de la disciplina de ingeniería de software.
+    </p></div>
+    
+        <div class="button-container">
+      <h1><b>Tercer punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Aclara los límites de la ingeniería de software en relación con otras disciplinas.
+    </p></div>
 
+
+
+        <div class="button-container">
+      <h1><b>Cuarto punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso4">
+      <br>
+      <br>
+      <p class="tag" align="center">Apoya la certificación y licencia de ingenieros de software.
+    </p></div>
+    
+
+    
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
