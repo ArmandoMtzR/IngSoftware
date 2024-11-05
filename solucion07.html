@@ -8,7 +8,7 @@
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
     <!-- Título de tu proyecto -->
-    <title>semigrupos, monoides y grupos</title>
+    <title>SWEBOK</title>
     <!--Descripción del tutorial-->
     <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
@@ -21,42 +21,91 @@
     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
 
     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
-    <link rel="stylesheet" href="media/css/solucion.css" type="text/css">
+    <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b>La resolución de este ejercicio es la siguiente:</b></h1>
-        <h1><b>Paso 1</b></h1>
-        <p class="tag" align="justify">Como 'l' es neutro a izquierda, entonces:</p>
-        <p class="tag" align="center"><i>l · s = s, ∀s ∈ S</i></p>
-        <p class="tag" align="justify">y como 'd' es neutro a derecha, entonces:</p>
-        <p class="tag" align="center"><i>s,d = s, ∀s ∈ S</i></p>
-        <h1><b>Paso 2</b></h1>
-        <p class="tag" align="justify">Ahora, tomado en (l) s = d, se obtiene:</p>
-        <p class="tag" align="center"><i>l · d = d</i></p>
-        <p class="tag" align="justify">y tomando en s = l, se obtiene:</p>
-        <p class="tag" align="center"><i>l · d = l</i></p>
-        <h1><b>Paso 3</b></h1>
-        <p class="tag" align="center">Por lo tanto: <i>s = l · d = l</i></p>
-        <p class="tag" align="justify">Los elementos neutros a derecha e izquierda coinciden y es por ello que existe en
-            'S' un
-            elemento neutro. Como además <i>(S, .)</i> es un semigrupo, entonces <i>(S, .)</i> es un semigrupo con
-            elemento neutro, asi que, el resultado es un monoide.</p>
-        <h1><b>Paso 4</b></h1>
-        <p class="tag" align="justify">Para la segunda parte, por reducción existe un elemento neutro a derecha d1.
-            Entonces, si <i>l y l</i>
-            son los elementos neutros a izquierda distintos que existen, la primera parte del ejercicio nos permite
-            deducir que:</p>
-        <p class="tag" align="center"><i>l = d1</i></p>
-        <p class="tag" align="justify">luego <i>l=l</i>, una contradicción.</p>
-        <h1><b>Por lo tanto, no existe d1 elemento neutro a derecha si hay dos elementos neutros a izquierda
-                distintos.</b></h1>
+<body style="">
+<section>
+    <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
 
-        <br><br>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
 
-</body>
+    
+    
+    <div class="button-container">
+        <h1><b>Primer Punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Definición de áreas de conocimiento.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Segundo punto </b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">Define el contenido de la disciplina de ingeniería de software.
+    </p></div>
+    
+        <div class="button-container">
+      <h1><b>Tercer punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Aclara los límites de la ingeniería de software en relación con otras disciplinas.
+    </p></div>
 
+
+
+        <div class="button-container">
+      <h1><b>Cuarto punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso4">
+      <br>
+      <br>
+      <p class="tag" align="center">Apoya la certificación y licencia de ingenieros de software.
+    </p></div>
+    
+
+    
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
