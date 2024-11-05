@@ -8,7 +8,7 @@
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
     <!-- Título de tu proyecto -->
-    <title>semigrupos, monoides y grupos</title>
+    <title>SWEBOK</title>
     <!--Descripción del tutorial-->
     <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
@@ -21,27 +21,91 @@
     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
 
     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
-    <link rel="stylesheet" href="media/css/solucion08.css" type="text/css">
+    <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b>Los pasos para resolver este ejericio son:</b></h1>
-        <h1><b>Paso 1</b></h1>
-        <p class="tag" align="justify"><i>H∩K</i> es un subgrupo tanto de <i>H como de K</i>. Por el Teorema
-            de Lagrange</p>
-        <p class="tag" align="justify">deducimos que <i>|H ∩ K|</i> tiene que dividir tanto a <i>|H| = 38</i> como
-            a <i>|K| = 55.</i></p>
-        <h1><b>Paso 2</b></h1>
-        <p class="tag" align="center"><i>Pero 38 = 2 × 19 y 55 = 5 × 11 son coprimos.</i></p>
-        <p class="tag" align="justify">asi que la única posibilidad es: </p>
-        <p class="tag" align="center"><i>|H ∩ K| = 1</i>, es decir <i>H ∩ K = {e}.</i></p>
-        <h1><b>Por lo tanto, se demuestra que: <i>H ∩ K = {e}</i></b></h1>
+<body style="">
+<section>
+    <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
 
-        <br><br>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
 
-</body>
+    
+    
+    <div class="button-container">
+        <h1><b>Primer Punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Definición de áreas de conocimiento.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Segundo punto </b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">Define el contenido de la disciplina de ingeniería de software.
+    </p></div>
+    
+        <div class="button-container">
+      <h1><b>Tercer punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Aclara los límites de la ingeniería de software en relación con otras disciplinas.
+    </p></div>
 
+
+
+        <div class="button-container">
+      <h1><b>Cuarto punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso4">
+      <br>
+      <br>
+      <p class="tag" align="center">Apoya la certificación y licencia de ingenieros de software.
+    </p></div>
+    
+
+    
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
