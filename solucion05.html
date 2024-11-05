@@ -7,10 +7,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="Author" content="Navarro Rodriguez Angel Efren"><!--Autor-->
 
-
+    <!-- Título de tu proyecto -->
     <title>SWEBOK</title>
     <!--Descripción del tutorial-->
-    <meta name="Description" content="GRUPOS, SEMIGRUPOS Y MONOIDES">
+    <meta name="Description" content="semigrupos, monoides y grupos">
     <meta name="Keywords" content="Clases, Objetos, DOO"><!--Palabras clave-->
     <meta name="robots" content="noindex, nofollow">
 
@@ -21,32 +21,91 @@
     <link rel="stylesheet" href="media/css/ui.css" type="text/css">
 
     <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
-    <link rel="stylesheet" href="media/css/solucion01.css" type="text/css">
+    <link rel="stylesheet" href="media/css/solucion07.css" type="text/css">
 </head>
 
-<body style>
-    <section>
-        <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
-        
-        <h1><b>Paso 1</b></h1>
-        <p class="tag" align="justify">Empecemos por entender que GS es un conjunto no vacío porque el elemento neutro,
-            que denotaremos por 1, pertenece
-            a GS ya que el elemento neutro es invertible.</p>
-        
-        <h1><b>Participaron un total de:</b></h1>
-        <p class="tag" align="justify">150 revisores<br></p>
-        
-        <h1><b>Paso 3</b></h1>
-        <p class="tag" align="justify"> <br>Por tanto, el producto de S restringido a GS es una operación interna.
-            Además, (GS, .) es un semigrupo (por verificar la operación · la propiedad asociativa en S), tiene
-            elemento neutro, ya que 1 también pertenece a GS y por construcción cada elemento de GS tiene
-            inverso, luego GS es un grupo.<br></p>
+<body style="">
+<section>
+    <h1><b>Piensa tu respuesta antes de dar click en revisar</b></h1>
 
-        
-        <br><br>
-        <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="20%" height="20%"></a>
-    </section>
+    <style>
+        /* Estilos para centrar los contenedores de los botones */
+        .button-container {
+          text-align: center;
+          margin-top: 40px;
+        }
+        /* Ocultar los elementos al cargar la página */
+        #paso1, #paso2, #paso3, #paso4 {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarPaso(idPaso) {
+          var paso = document.getElementById(idPaso);
+          if (paso.style.display === 'block') {
+            paso.style.display = 'none';
+          } else {
+            paso.style.display = 'block';
+          }
+        }
+      </script>
+    
 
-</body>
+    
+    
+    <div class="button-container">
+        <h1><b>Primer Punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso1')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso1" style="display: none;">
+      <p class="tag" align="center"><br>Definición de áreas de conocimiento.<br>
+      
+    </p></div>
+    
+    <div class="button-container">
+      <h1><b>Segundo punto </b></h1>
+      <button type="button" onclick="mostrarPaso('paso2')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso2">
+      <br>
+      <br>
+      <p class="tag" align="center">Define el contenido de la disciplina de ingeniería de software.
+    </p></div>
+    
+        <div class="button-container">
+      <h1><b>Tercer punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso3')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso3">
+      <br>
+      <br>
+      <p class="tag" align="center">Aclara los límites de la ingeniería de software en relación con otras disciplinas.
+    </p></div>
 
+
+
+        <div class="button-container">
+      <h1><b>Cuarto punto</b></h1>
+      <button type="button" onclick="mostrarPaso('paso4')"><img src="media/css/img/cuestionario_revisar.png" alt="" width="77%" height="77%"></button>
+    </div>
+    
+    <div id="paso4">
+      <br>
+      <br>
+      <p class="tag" align="center">Apoya la certificación y licencia de ingenieros de software.
+    </p></div>
+    
+
+    
+    </div></section><b>
+  
+  <br>
+  <br>
+      <a href="ejemplos.html"><img src="media/css/img/ejemplos_regresar.png" alt="" width="15%" height="10%"></a>
+
+    </b></body>
+    
 </html>
