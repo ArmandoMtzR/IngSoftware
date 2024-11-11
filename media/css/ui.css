@@ -32,7 +32,7 @@ body {
 }
 
 html body {
-  background: #000000 url(temas/tema0.jpg) center center fixed no-repeat;
+  background: #000000 url(temas/tema0.jpg) center center fixed no-repeat\0;
 }
 
 @media all and (min-width:0) {
@@ -247,12 +247,12 @@ p.tag {
 }
 
 #nav-left ul#themes {
-  display: none;
+  display: none\0;
 }
 
 @media all and (min-width:0) {
   html #nav-left ul#themes {
-    display: block;
+    display: block\0;
   }
 
   /* IE9-IE10pp4 */
@@ -500,7 +500,7 @@ iframe {
 }
 
 html iframe {
-  background: none;
+  background: none\0;
 }
 
 @media all and (min-width:0) {
